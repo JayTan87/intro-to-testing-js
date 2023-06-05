@@ -30,4 +30,13 @@ describe("sayHello", () => {
     it("sayHello('Pat') should return 'Hello, Pat!'", () => {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     })
+    it("sayHello('World) should return 'Hello, World!", () => {
+        expect(sayHello("World")).toBe("Hello, World!");
+    })
+    it("sayHello(true) should return 'Hello, World!", () => {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it("sayHello(false) should return 'Hello, World!", () => {
+        expect(sayHello(false)).toBe("Hello, World!");
+    })
 })
