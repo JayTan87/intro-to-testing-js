@@ -18,4 +18,16 @@ describe("sayHello", () => {
     it("Should be a defined function", () => {
         expect(sayHello).toBeDefined();
     })
+    it("Should return a string when called", () => {
+        expect(typeof sayHello()).toBe("string");
+    })
+    it("sayHello('Jane') should return 'Hello, Jane!'", () => {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    })
+    it("sayHello('Alex') should return 'Hello, Alex!'", () => {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    })
+    it("sayHello('Pat') should return 'Hello, Pat!'", () => {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    })
 })
